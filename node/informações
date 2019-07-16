@@ -1,0 +1,77 @@
+O node usa o mesmo interpratador do java script do browser V8.
+
+Node: ambiente de execução do serviço do lado do servidor.
+
+Foi fundado pro Rien Doum.
+
+Apache é baseado em thread.
+
+Nginx
+
+Thread: linha de execução de um computador.
+
+Node, nasceu para trabalhar com formas assincrona.
+
+LIBUV faz todas a parte de assincronismo do node. Event Queue(fila de evento), evento loop, block de operações, execução callback, Worker threads (File system , net work, progress)
+
+IO: sempre que necessita fazer algo com arquivos, entrada e saída
+
+Sempre que tiver uma operação pesada, talvez é melhor tirar ela do event loop, para não atrapalhar a execução.
+
+122.
+// Como  a  aplicação é organizada.
+
+//A forma de que você vai organizar o Front do back end é diferente.
+
+//Angular você vai ter os decorator, se tabalhacom react você vai ter os jsrx
+
+//Formas de exportar
+Module A.js
+Module B.js
+    Acessar outros arquivos
+ModuleCliente.js
+
+123. Usando modulos de terceiros
+
+    npm: gerenciado de pacotes do node
+
+    npm i lodash
+    npm i -g nodemon // É como se ele fosse o servidor, que faz as alterações a cada vez que você altera as informações.
+
+124. Sistemas de modulos Require
+
+Cria uma nova pasta chamada pastaA
+    dentro da pastaA , criar uma nova pastaB
+
+
+//Case sensitive não vai funcionar no linux: require('../../Moduleb')
+
+125. Sistemas de modulos Exports
+    exportar.js
+
+
+126. Arquivo package.json
+
+criar uma nova pasta chamada Funcionario
+    npm init  // habilita um wizard para definir seus package.json
+    npm init -y //responde tudo automático
+
+    além de descrever seu projeto, ele descreve todas as dependencias do projeto.
+    axios //faz conexões com alguma coisa remota.
+
+    npm i --save axion
+    npm i --save-dev axios@0.17.1 -e
+
+    json.locked.json// arquivo  mais detalhado, garantes pegar a mesma versão
+
+127. Foi desafio
+
+128. Instância unica ou Nova instância 
+
+    InstanciaUnica.js
+    InstaciaNova.js
+    InstanciaCliente.js
+
+129. Objeto global
+
+    

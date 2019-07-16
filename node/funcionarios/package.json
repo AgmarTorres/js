@@ -1,0 +1,17 @@
+{
+  "name": "agmar",
+  "version": "1.0.0",
+  "description": "pwd",
+  "main": "index.js",
+  "scripts": {
+    "test": "a"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axion": "^0.1.0"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1"
+  }
+}
